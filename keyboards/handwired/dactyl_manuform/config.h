@@ -31,3 +31,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Extended boot wait time for Pro Micro bootloader */
 #define USB_BOOT_WAIT_TIME 3000
+
+/* Split keyboard handshake timeout (ms) */
+#define SPLIT_USB_TIMEOUT 2000
