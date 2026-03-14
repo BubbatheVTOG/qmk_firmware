@@ -28,3 +28,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Enables This makes it easier for fast typists to use dual-function keys */
 #define PERMISSIVE_HOLD
+
+/* Extended boot wait time for Pro Micro bootloader */
+#define USB_BOOT_WAIT_TIME 3000
