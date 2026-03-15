@@ -3,6 +3,29 @@
 ![Imgur](https://i.imgur.com/7y0Vbydh.jpg)  
 *Pair of Dactyl Manuform 4x6*
 
+---
+
+## **BUBBA'S QUICK FLASH GUIDE**
+
+### **Build Command**
+```bash
+cd /home/bubba/git/qmk_firmware
+make handwired/dactyl_manuform/5x6:bubba
+```
+
+### **Flash Command**
+```bash
+sudo avrdude -c avr109 -p atmega32u4 -P /dev/ttyACM0 -b 57600 -F -U flash:w:/home/bubba/git/qmk_firmware/handwired_dactyl_manuform_5x6_bubba.hex:i
+```
+
+### **Setup Notes**
+- **Config**: Uses `SPLIT_USB_DETECT` with `EE_HANDS` for hot-swap capability
+- **Bootloader**: Double-tap reset button to enter bootloader mode
+- **First time setup**: Plug into RIGHT side first to set EEPROM handedness correctly
+- **Working config**: `/home/bubba/git/qmk_firmware/keyboards/handwired/dactyl_manuform/config.h`
+
+---
+
 Forked from the [Dactyl](/keyboards/handwired/dactyl), the *Dactyl ManuForm* is a parameterized, handwired, split bodied, tented, concave key-well design that incorporates the thumb cluster from the [ManuForm](https://geekhack.org/index.php?topic=46015.0).
 
 * Keyboard Maintainer: [Tom Short](https://github.com/tshort)
